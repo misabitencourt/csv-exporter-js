@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+</head>
+<body>
+    <a href="javascript:;" title="Download" id="link-sample">Click here</a>
+</body>
+
+<script src="dist/bundle.js"></script>
+<script>    
+    document.getElementById('link-sample').addEventListener('click', function() {
+        var data = [
+            ['Paula Tejano', 22, 1.55],
+            ['Thomas Thurbano', 42, 1.72],
+            ['Paulo Sttrado', 34, 1.68],
+            ['Cuca Behludo', 68, 1.75]
+        ];
+
+        window.csvExporter(data, {
+            header: ['Nome', 'Idade', 'Altura'],
+            separator: ';'
+        });
+    })
+</script>
+</html>
