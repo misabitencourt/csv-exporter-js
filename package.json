@@ -2,7 +2,7 @@
   "name": "csv-exporter",
   "version": "1.0.0",
   "description": "Exporta dados para arquivos csv",
-  "main": "index.html",
+  "main": "src/index.js",
   "scripts": {
     "start": "webpack -w --hide-modules --colors --progress",
     "serve": "echo \"use IIS\"",
