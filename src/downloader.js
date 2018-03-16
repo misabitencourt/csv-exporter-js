@@ -9,7 +9,7 @@ export default (data, downloadFileName, contentType) => {
     } 
     
     let a = document.createElement('a')
-    a.href = `data:text/csv,${encodeURIComponent(data)}`
+    a.href = `data:text/csv;charset=utf-8,%EF%BB%BF${encodeURIComponent(data)}`
     a.download = downloadFileName
     document.body.appendChild(a)
     a.click()
