@@ -1,5 +1,5 @@
 {
-  "name": "csv-exporter",
+  "name": "csv-exporter-browser",
   "version": "1.0.1",
   "description": "Exporta dados para arquivos csv",
   "main": "src/index.js",
