@@ -1,6 +1,6 @@
 export default (data, downloadFileName, contentType) => {        
     if (window.navigator.msSaveBlob) {        
-        let file = new Blob([data], { type: contentType })
+        let file = new Blob([data], { type: contentType, encoding: 'UTF-8' })
         if (window.navigator.msSaveOrOpenBlob) {
             navigator.msSaveOrOpenBlob(file, downloadFileName)
         }
